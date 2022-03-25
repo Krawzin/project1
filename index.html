@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="img" src="./assets/img/logo.png" alt="logo">
+            <div class="menu">
+                    <h1>Controle financeiro</h1>
+            </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Cadastrar transação</a></li>
+                <li class="bar">│</li>
+                <li><a href="#"> Limpar dados</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form class="form-section">
+            <div class="transaction">
+                <h2 class="h2-trans">Nova Transação</h2>
+                <div class="fields">
+                    <div class="select-div">
+                        <h4>Transação</h4>
+                        <select required id="select-field" name="field">
+                            <option value="Compra">Compra</option>
+                            <option value="Venda">Venda</option>
+                        </select>
+                    </div>
+                    <div class="name-div">
+                        <h4 class="name">Nome da Mercadoria</h4>
+                        <input required id="input-name" type="text" placeholder="Nome" />
+                    </div>
+                    <div class="value-div">
+                        <h4 class="value">Valor</h4>
+                        <input required id="input-value" type="number" placeholder="R$ 0,00">
+                    </div>
+
+                </div>
+                <div class="button-div">
+                    <input type="submit" class="add-tran" value="Adicionar transação" />
+
+                </div>
+            </div>
+        
+            <div class="extract">
+            <h2 class="h2-extract">Extrato de Transações</h2>
+            <table id="extract-table">
+                <tr class="item-title">
+                    <td></td>
+                    <td style="font-weight: bold;">Mercadoria</td>
+                    <td style="text-align: end; padding-right: 10px; font-weight: bold;">Valor</td>
+                </tr>
+                <tr class="item1">
+                    <td>-</td>
+                    <td>Mercado Carapicuiba</td>
+                    <td style="text-align: end; padding-right: 10px;">R$ 38,59</td>
+                </tr>
+                <tr class="item2">
+                    <td>-</td>
+                    <td>Padaria Pão Gostoso</td>
+                    <td style="text-align: end; padding-right: 10px;">R$ 27,00</td>
+                </tr>
+                <tr class="total">
+                    <td style="border-bottom: none"></td>
+                    <td style="border-bottom: none; font-weight: bold;">Total</td>
+                    <td style="text-align: end; border-bottom: none; padding-right: bold;">R$ 65,59 <br>[Negativo]</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </main>    
+    <script src="./assets/js/mobile.navbar.js"></script>
+</body>
+<footer>
+</footer>
